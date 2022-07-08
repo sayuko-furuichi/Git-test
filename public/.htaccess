@@ -17,9 +17,4 @@
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ server.php [L]
-</IfModule>
-<IfModule mod_rewrite.c>
-   RewriteEngine On 
-   RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
+    RewriteRule ^ index.php [L]
